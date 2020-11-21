@@ -35,7 +35,6 @@ function generatePassword() {
   if (special) {
     password += characters.sym;
   }
-  console.log(password)
 }
 // Build password with prompts & confirms for properties
 function selectProperties() {
@@ -79,27 +78,16 @@ function selectProperties() {
     );
   }
 
- 
-
-    //call function
+    // Call function
     generatePassword();
 
-    // Input text
- 
-    console.log(password)
-
+    // Randomize 
     for (var i =0; i < length; i++) {
       finalPassword += password[Math.floor(Math.random() * password.length)];
     }
-    
-    console.log(finalPassword)
+    // Display text
     passwordText.textContent = finalPassword;
 
    
   }
 
-  
-   
-
-
-// Generate once conditons met
