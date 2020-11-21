@@ -36,7 +36,7 @@ function generatePassword() {
     password += characters.sym;
   }
 }
-// Build password with prompts & confirms for properties
+// Build password properties with 'prompts & confirms'
 function selectProperties() {
 
   passwordText.textContent = "";
@@ -46,7 +46,7 @@ function selectProperties() {
    length = Number(prompt("Enter desired password length"));
   while (isNaN(length) || length < 8 || length > 128)
     length = Number(
-      prompt("Length must be between 8 and 128 characters. Please enter again.")
+      prompt("Length must be 8-128 characters. Please enter again.")
     );
 
    lowerCase = confirm(
